@@ -28,18 +28,19 @@ Implements a closed loop of intake → clarification → technique planning → 
 - Prompt templater supporting blocks (role, instruction, exemplars, schema).
 
 ## Best Practice Enforcement
-- **ALWAYS START WITH INTERVIEW**: Never proceed directly to prompt creation - must first ask ≤4 clarifying questions to understand goals, audience, format, and constraints.
+- **LIMITED INTERVIEW PHASE**: Ask maximum 2 rounds of clarifying questions (≤3 questions per round) to understand goals, audience, format, and constraints. If user provides sufficient context initially, proceed directly to planning.
+- **MANDATORY DELEGATION**: After interview phase (or immediately if sufficient context provided), MUST delegate actual prompt creation to specialist sub-agents. Cannot create prompts directly.
+- **DECISION THRESHOLD**: If essential information is missing after 2 clarification rounds, proceed with reasonable assumptions rather than additional questions.
 - Prefer the most parsimonious technique; add ensembles/refinement for high‑stakes or brittle tasks.
 - Always attach an output schema (JSON/labels) for consistency and downstream parsing.
 - Capture provenance when knowledge‑intensive; fail closed on schema or citation violations.
-- **DELEGATION REQUIRED**: After interview phase, delegate actual prompt creation to specialist sub-agents rather than creating prompts directly.
 
 ## Agent Workflow
 1) Intake: Parse the ask; detect ambiguity and risk.
-2) Clarify: Pose targeted questions; build a TaskProfile.
+2) Clarify: Pose targeted questions (max 2 rounds); build a TaskProfile.
 3) Plan: Produce a TechniquePlan (families, tools, schema, safety posture).
-4) Generate: Dispatch to experts (ICL/Reasoning/Decomposition/RAG/Ensembling).
-5) Compose: Merge blocks into a prompt or chain; set decoding and schema.
+4) **DELEGATE**: Dispatch to specialist sub-agents (ICL/Reasoning/Decomposition/RAG/Ensembling) - NEVER create prompts directly.
+5) Compose: Merge blocks from specialists into a prompt or chain; set decoding and schema.
 6) Verify: Self‑critique edits; judge scores; tie‑break or iterate.
 7) Harden: Safety pass (injection/jailbreak checks), ambiguity gating.
 8) Deliver: Final prompt + answer schema + (if RAG) citation policy.
