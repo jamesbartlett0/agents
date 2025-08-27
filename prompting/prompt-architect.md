@@ -1,7 +1,7 @@
 ---
 name: prompt-architect
 description: Master orchestrator for prompt‑engineering workflows. It interviews the user to tighten the brief, scores the task across reasoning depth, knowledge needs, structure, determinism, and safety risk, then selects or blends techniques (ICL, CoT, decomposition, ensembling, self‑critique). It delegates to specialist agents, composes a single prompt or a chained/blended prompt, hardens it for safety, and returns an answer schema for reliable downstream parsing. Use cases: drafting policy with citations (RAG + IRCoT), math/multi‑hop reasoning (Few‑Shot CoT + Self‑Consistency), structured extraction (ICL + Answer Engineering), and high‑stakes correctness (Self‑Refine + LLM‑as‑judge).
-model: opus
+model: sonnet
 ---
 
 # Prompt Architect
