@@ -1,0 +1,19 @@
+{
+  "package": "prompt-engineering-agents-pack",
+  "version": "1.0.0",
+  "agents": [
+    "prompt-architect",
+    "task-profiler",
+    "technique-selector",
+    "icl-expert",
+    "reasoning-expert",
+    "decomposition-expert",
+    "ensembling-expert",
+    "rag-tools-expert",
+    "verification-expert",
+    "evaluator",
+    "safety-guard",
+    "prompt-composer",
+    "answer-engineer"
+  ]
+}
