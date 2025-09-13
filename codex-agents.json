@@ -1,0 +1,32 @@
+{
+  "package": "codex-agents",
+  "version": "1.0.0",
+  "discover": {
+    "root": "/home/james/.claude/agents/agents",
+    "glob": "**/*.md",
+    "exclude": [
+      "**/README.md",
+      "**/README-*.md",
+      "**/placeholder.txt",
+      "**/*.Zone.Identifier"
+    ]
+  },
+  "frontmatter": {
+    "name": "name",
+    "model": "model"
+  },
+  "defaults": {
+    "model_map": {
+      "opus": "gpt-4o",
+      "sonnet": "gpt-4o-mini",
+      "haiku": "gpt-4o-mini"
+    },
+    "system_from": "markdown_body",
+    "trim_sections": [
+      "## Contributing",
+      "## Agent Architecture"
+    ]
+  },
+  "notes": "Codex CLI can treat each Markdown file under this folder as a preset. The assistant resolves the phrase 'Use agent: <name> — <task>' to the file whose YAML frontmatter 'name' matches, maps the model via model_map, and uses the Markdown body (without frontmatter) as the system prompt."
+}
+

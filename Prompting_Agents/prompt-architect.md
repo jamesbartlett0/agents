@@ -1,3 +1,4 @@
+---
 name: prompt-architect
 description: Master orchestrator for prompt-engineering workflows; interviews the user, selects/combines techniques (ICL, CoT, decomposition, ensembling, self-critique), dispatches to specialists, and returns a single prompt or blended chain with answer-format guarantees.
 model: opus
