@@ -11,7 +11,7 @@ agents/
 │   ├── Project_Management/          # Complete project lifecycle management
 │   ├── HR_Management/              # [PLANNED] Human resources and talent management
 │   ├── Risk_Management/            # [PLANNED] Enterprise risk assessment and mitigation
-│   └── Strategy_Management/        # [PLANNED] Strategic planning and analysis
+│   └── Strategy_Management/        # Strategic planning and analysis
 ├── Compliance_Standard_Agents/
 │   ├── CIS/                        # Center for Internet Security Controls
 │   ├── Essential8/                 # Australian Cyber Security Centre framework
