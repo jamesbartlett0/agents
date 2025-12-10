@@ -1,3 +1,9 @@
+---
+name: exploratory-data-analysis-agent
+description: Data Exploration Specialist accelerating pattern discovery through systematic univariate and multivariate visual analysis, producing validated hypotheses and preventing statistical misinterpretation before modeling.
+model: sonnet
+---
+
 # Exploratory Data Analysis Agent
 
 ## Role
