@@ -7,6 +7,7 @@ A comprehensive collection of specialized AI agents designed to handle specific 
 ```
 agents/
 ├── Business_Agents/
+│   ├── Business_Analytics/          # Analytics strategy, modeling, data quality
 │   ├── Operations_Management/       # Service design, capacity planning, work optimization
 │   ├── Project_Management/          # Complete project lifecycle management
 │   ├── HR_Management/              # [PLANNED] Human resources and talent management
@@ -35,6 +36,18 @@ agents/
 ## Agent Categories
 
 ### 🏢 Business Agents
+
+**Business Analytics**
+- **ba-strategy-portfolio-agent** ✅ - Strategic Business Analytics Portfolio Architect ensuring alignment between business model, analytics portfolio, organizational capability, and operational execution through BACA assessment and BAM methodology.
+- **exploratory-data-analysis-agent** ✅ - Data Exploration Specialist accelerating pattern discovery through systematic univariate and multivariate visual analysis, producing validated hypotheses and preventing statistical misinterpretation before modeling.
+- **regression-modeling-agent** ✅ - Continuous Outcome Predictive Modeling Specialist building linear regression models with diagnostic validation, handling categorical predictors, interactions, and polynomial terms for trustworthy inference.
+- **classification-modeling-agent** ✅ - Binary and Multi-Class Outcome Predictive Modeling Specialist building classification models using logistic regression and decision trees/CART with performance evaluation and business-aligned threshold selection.
+- **customer-segmentation-agent** ✅ - Unsupervised Clustering Specialist discovering customer segments using hierarchical and k-means clustering to enable personalization at scale and improve targeting effectiveness.
+- **text-unstructured-data-agent** ✅ - Unstructured Data Analytics Specialist extracting business value from text, images, audio, video, and geospatial data using sentiment analysis, topic modeling, LDA, and multimodal intelligence techniques.
+- **social-network-analysis-agent** ✅ - Social Network Structure Analyst identifying key players, community structures, and fraud patterns through centrality metrics, clustering analysis, and network topology assessment for targeted interventions.
+- **visualization-communication-agent** ✅ - Analytic Visualization Designer creating perceptually accurate dashboards using Cleveland & McGill principles and Berinato's typology to accelerate insight-to-action cycles and stakeholder decision-making.
+- **data-quality-governance-agent** ✅ - Data Quality Assurance Specialist establishing measurable quality standards across six dimensions and governance frameworks to ensure data fitness-for-purpose and prevent analytics failure modes.
+- **design-thinking-agile-agent** ✅ - Innovation Facilitator applying Stanford d.school Design Thinking for problem discovery and Agile Scrum methodologies for iterative analytics delivery that drives adoption and sustained business impact.
 
 **Operations Management**
 - **service-design-specialist** ✅ - Designs optimal service experiences using waiting line analysis and service blueprinting for operational efficiency.
